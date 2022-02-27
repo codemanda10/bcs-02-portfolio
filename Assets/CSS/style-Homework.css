@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    font-family: Arial;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: bisque;
+  }
+
+  header {
+    padding: 20px;
+    text-align: right;
+    background: #13293d;
+    color: #fff;
+  }
+  
+
+  nav {
+    display: block;
+    height: 100px;
+
+  }
+
+  li {
+    display: inline;
+    padding: 6px;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;  
+  }
+
+  p {
+    z-index: 10;
+  }
+
+  h1 {
+    padding-top: 100px;
+  }
+
+  h2 {
+    padding-top: 400px;
+  }
+
+  .header-img { 
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+
+  .hero {
+    width: 100vw;
+    z-index: -1;
+    position: none;
+    text-align: center;
+}
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .hero-text {
+    width: 100%;
+    position: relative;
+    margin-top: -50%;
+  }
+
+  .hero-text h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+
+  .inner-text {
+    font-weight: 700;
+    font-size: 24px;
+    margin: auto;
+  }
+
+  .main-container {
+    width: 80%;
+    position: relative;
+  }
+
+  .sidebar {
+    width: 350px;
+    height: auto;
+    background-color: white;
+    display: inline-block;
+    text-align: right;
+    padding: 30px;
+  }
+
+  .content {
+    /**** flex-grow allows this content area to fill the remaining space***/
+    flex-grow: 1;
+    display: flex;
+    background-color: #bb8588;
+  }
+
+
+  aside {
+    width: 25%;
+    float: left;
+    background-color: #bb8588;
+  }
+
+  section {
+    float: right;
+    background-color: #fff;
+    padding: 20px;
+
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+
+  .line {
+    border-right: 4px solid black;
+    padding: px;
+  }
+
+  
+  /****MEDIA QUERY RELATED TO DISPLAYS ON MULTIPLE DEVICES**/
+  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+  /* this media only screen is related to large devices and directed at the sidebar disappearing when less than 992px*/
+  @media only screen and (max-width: 992px) {
+
+    .sidebar {
+      display: none;
+    }
+  }
+  
+  /* Tablets - header changes color */
+  @media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
+  
