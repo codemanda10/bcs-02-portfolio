@@ -6,7 +6,7 @@
 body {
   font-family: monospace, sans-serif;
   width: 100%;
-  background-color: bisque;
+  /*background-color: rgb(241, 226, 255);*/
 }
 
 header {
@@ -60,6 +60,8 @@ li {
   font-size: 28px;
   font-weight: bold;
 }
+
+
 
 .close:hover,
 .close:focus {
@@ -130,7 +132,7 @@ h3 {
 }
 
 .sidebar {
-  width: 350px;
+  width: 300px;
   height: auto;
   background-color: white;
   display: inline-block;
@@ -138,31 +140,59 @@ h3 {
   padding: 30px;
 }
 
+/**************FLEXBOX CONTAINER*************/
 .flexbox-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around; /*This allows even space around all flex-boxes*/
   align-items: center; /*aligning boxes at the center*/
-  background-color: #bb8588;
 }
 
+/**************FLEXBOXES*************/
 .flexbox-item {
   width: 400px;
   margin: 10px;
-  border: 3px solid black;
-  background-color: white;
+  padding: 10px;
+  border: 3px solid rgb(176, 92, 255);
+  background-color: blueviolet;
+}
+
+.linear-gradient-background {
+  background-image:
+  linear-gradient(
+    rgb(138, 32, 138), pink
+  );
+}
+
+.flexbox-item-title {
+  display: flex;
+  max-height: 30px;
+  max-width: 200px;
+  border: 3px solid rgb(176, 92, 255);
+  justify-content: center;
+}
+
+.flexbox-title {
+  max-height: 70px;
+  max-width: 200px;
+  border-radius: 5%;
+  text-align: center;
+  color: white; 
 }
 
 .flexbox-item-1 {
   min-height: 500px;
+  border-radius: 5%;
 }
 
 .flexbox-item-2 {
   min-height: 500px;
+  border-radius: 5%;
 }
 
 .flexbox-item-3 {
   min-height: 500px;
+  border-radius: 5%;
 }
 
 
@@ -170,13 +200,11 @@ h3 {
 aside {
   display: block;
   width: 25%;
-  background-color: #bb8588;
 }
 
 section {
   background-color: #fff;
   padding: 20px;
-
 }
 
 footer {
