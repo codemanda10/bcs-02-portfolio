@@ -1,83 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Portfolio of Amanda Webster</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="./Assets/CSS/style-Homework.css"/>
-      </head>
+<head>
+	<title>Portfolio of Amanda Webster</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="./Assets/CSS/reset.css" />
+	<link rel="stylesheet" type="text/css" href="./Assets/CSS/style-Homework.css" />
+</head>
 
-    <body>
-      
-       <!-- Header -->
-    <header>
-                  <!-- Navbar -->
-      <nav>
-          <img class="header-img" src="./Pictures/Goat Nation (only logo) -02.png" alt="Goat logo">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-<!-- Trigger/Open The Modal -->
-        <button id="myBtn">Contact Me</button>
+<body>
 
-<!-- The Modal -->
-    <div id="myModal" class="modal">
+	<!-- Header -->
+	<header>
+		<!-- Navbar -->
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+			</ul>
+			<!-- Trigger/Open The Modal -->
+			<button id="myBtn">Contact Me</button>
 
-<!-- Modal content -->
-    <div class="modal-content">
-     <span class="close">&times;</span>
+		</nav>
 
-        <h3>Ask me a question</h3>
-        <label for="name">Name: </label>
-        <input type="text">
-        <label for="email">Email: </label>
-        <input type="email" name="email">
-        <button>Contact</button>
-      </div>
-    </div>
-    </div>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
 
-      </nav>
-    </header>
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
 
+				<h3>Ask me a question</h3>
+				<label for="name">Name: </label>
+				<input type="text">
+				<label for="email">Email: </label>
+				<input type="email" name="email">
+				<button>Contact</button>
+			</div>
+		</div>
+		</div>
 
+	</header>
 
-      <main>
-          <!--About me-->
-        <div class="hero-image">
-        <div class="hero-text">
-          <h1>Amanda's Coding Portfolio</h1>
-        </div>
-        </div>
+	<main>
+		<!--About me-->
+		<div class="hero-image">
+			<div class="hero-text">
+				<h1>Amanda's Coding Portfolio</h1>
+			</div>
+		</div>
 
-      </main>
+	</main>
+	<div id="portfolio"></div>
+	<div class="main-container">
+		<!-- Sidebar -->
+		<aside class="sidebar">
+			<span class="inner-text">Portfolio</span>
+			<h2>Socials</h2>
+		</aside>
+	</div>
+	<!--Content-->
+	<div class="flexbox-container">
+		<a href="https://www.google.com" class="flexbox-item linear-gradient-background flexbox-item-1">
+			<div class="flexbox-item-title flexbox-title">Code Refactoring</div>
+			<div class="img-wrapper"><img src="./Pictures/Goat Nation (only logo) -03.png" alt=""></div>
+		</a>
+		<a href=""></a>
+		<div class="flexbox-item linear-gradient-background flexbox-item-2">
+			<div class="flexbox-item-title flexbox-title">Portfolio</div>
 
-        <div class="main-container">
-            <!-- Sidebar -->
-            <aside class="sidebar">
-              <span class="inner-text">Portfolio</span>
-              <h2>Socials</h2>
-            </aside>
-          </div>
-            <!--Content-->
-        <div class="flexbox-container">
-          <div class="flexbox-item linear-gradient-background flexbox-item-1">
-            <div class="flexbox-item-title flexbox-title">Code Refactoring</div> 
-          </div>
+		</div>
+		<div class="flexbox-item linear-gradient-background flexbox-item-3">
+			<div class="flexbox-item-title flexbox-title">CSS Cheatsheet</div>
 
-          <div class="flexbox-item linear-gradient-background flexbox-item-2">
-            <div class="flexbox-item-title flexbox-title">Portfolio</div> 
-            
-          </div>
-          <div class="flexbox-item linear-gradient-background flexbox-item-3">
-            <div class="flexbox-item-title flexbox-title">CSS Cheatsheet</div> 
+		</div>
 
-          </div>
+	</div>
 
-        </div>
+	<script src="scripts/app.js"></script>
 
-        <script src="scripts/app.js"></script>
-
-    </body>
+</body>
 
 </html>

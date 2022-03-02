@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,15 +12,18 @@ body {
 
 header {
   padding: 20px;
+  width: 100%;
   text-align: right;
   background: #13293d;
   color: #fff;
+  position: fixed;
 }
 
 /************NAVIGATION AREA*******************/
 nav {
-  display: block;
-  height: 100px;
+  display: flex;
+  height: 17px;
+  justify-content: space-between;
 }
 
 li {
@@ -50,7 +54,7 @@ li {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 40%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -60,7 +64,6 @@ li {
   font-size: 28px;
   font-weight: bold;
 }
-
 
 
 .close:hover,
@@ -91,9 +94,9 @@ h3 {
 }
 
 .header-img { 
-  width: 100px;
-  height: 100px;
-  padding: 5px;
+  width: 80px;
+  height: 80px;
+  padding: 2px;
 }
 
 /************MAIN PHOTO AND TEXT*******************/
@@ -154,9 +157,13 @@ h3 {
   margin: 10px;
   padding: 10px;
   border: 3px solid rgb(176, 92, 255);
-  background-color: blueviolet;
+  background-color: blueviolet; transition: box-shadow 1s;
 }
-
+.flexbox-item:hover {
+  box-shadow: inset 0px 0px 8px
+  rgb(205, 59, 241), 0 0 15px
+  rgb(201, 64, 243); transition: box-shadow 0.5s ease-in-out;
+}
 .linear-gradient-background {
   background-image:
   linear-gradient(
@@ -181,20 +188,41 @@ h3 {
 }
 
 .flexbox-item-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 500px;
   border-radius: 5%;
 }
 
 .flexbox-item-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 500px;
   border-radius: 5%;
 }
 
 .flexbox-item-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 500px;
   border-radius: 5%;
 }
-
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  flex-grow: 1;
+}
+.flexbox-container img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 
 
 aside {
@@ -263,4 +291,7 @@ section {
   background-color: #fff;
   padding: 20px;
 
+}
+#portfolio {
+  height: 57px;
 }
